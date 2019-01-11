@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a set of scripts that allow for an automatic collection of _10s of thousands_ of images for the following (loosely defined) categories to be later used for training an image classifier:
+This is a set of scripts that allows for an automatic collection of _10s of thousands_ of images for the following (loosely defined) categories to be later used for training an image classifier:
 - `porn` - pornography images
 - `hentai` - hentai images, but also includes pornographic drawings
 - `sexy` - sexually explicit images, but not pornography. Think nude photos, playboy, bikini, beach volleyball, etc.
