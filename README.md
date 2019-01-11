@@ -54,5 +54,6 @@ Prerequisites:
 
 I was able to train a CNN classifier to 91% accuracy with the following confusion matrix:
 ![alt text](confusion_matrix.png)
+
 As expected,  `anime` and `hentai` are confused with each other more frequenty than with other classes.
 Same with `porn` and `sexy` categories.
