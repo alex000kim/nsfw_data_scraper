@@ -1,5 +1,7 @@
 # NSFW Data Scrapper
 
+## Description
+
 This is a set of scripts that allow for an automatic collection of _10s of thousands_ of images for the following (loosely defined) categories to be later used for training an image classifier:
 - `porn` - pornography images
 - `hentai` - hentai images, but also includes pornographic drawings
@@ -18,7 +20,13 @@ Here is what each script (located under `scripts` directory) does:
 - `5_create_train.sh` - creates `data/train` directory and copy all `*.jpg` and `*.jpeg` file into it from `raw_data`. Also removes corrupted images
 - `6_create_test.sh` - creates `data/test` directory and moves `N=2000` random files for each class from `data/train` to `data/test` (change this number inside the script if you need a different train/test split). Alternatively, you can run it multiple times, each time it will move `N` images for each class from `data/train` to `data/test`.
 
-How to run:
+## Prerequisites
+- Python3 environment: `conda env create -f environment.yml`
+- Java runtime environment: 
+   - Ubuntu linux:`sudo apt-get install default-jre`
+- Linux command line tools: `wget`, `convert` (`imagemagick` suite of tools), `rsync`, `shuf`
+
+## How to run
 Change working directory to `scripts` and execute each script in the sequence indicated by the number in the file name, e.g.:
 ```bash
 $ bash 1_get_urls.sh # has already been run
@@ -45,15 +53,9 @@ $ ls test
 drawings hentai neutral porn sexy
 ```
 
-Prerequisites:
-- Python3 environment: `conda env create -f environment.yml`
-- Java runtime environment: 
-   - Ubuntu linux:`sudo apt-get install default-jre`
-- Linux command line tools: `wget`, `convert` (`imagemagick` suite of tools), `rsync`, `shuf`
-
-
 I was able to train a CNN classifier to 91% accuracy with the following confusion matrix:
 ![alt text](confusion_matrix.png)
 
 As expected,  `anime` and `hentai` are confused with each other more frequenty than with other classes.
+
 Same with `porn` and `sexy` categories.
