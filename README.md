@@ -30,7 +30,7 @@ Here is what each script (located under `scripts` directory) does:
 Change working directory to `scripts` and execute each script in the sequence indicated by the number in the file name, e.g.:
 ```bash
 $ bash 1_get_urls.sh # has already been run
-$ find ../raw_data -name "*.txt" -exec sh -c "echo Number of urls in {}: ; cat {} | wc -l" \;
+$ find ../raw_data -name "urls_*.txt" -exec sh -c "echo Number of urls in {}: ; cat {} | wc -l" \;
 Number of urls in ../raw_data/drawings/urls_drawings.txt:
    25732
 Number of urls in ../raw_data/hentai/urls_hentai.txt:
