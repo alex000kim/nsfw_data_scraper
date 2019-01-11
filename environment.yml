@@ -1,0 +1,39 @@
+name: nsfw_data_scrapper
+channels:
+  - anaconda
+  - defaults
+  - conda-forge
+dependencies:
+  - asn1crypto=0.24.0=py37_0
+  - beautifulsoup4=4.6.3=py37_0
+  - ca-certificates=2018.03.07=0
+  - certifi=2018.10.15=py37_0
+  - cffi=1.11.5=py37he75722e_1
+  - chardet=3.0.4=py37_1
+  - cryptography=2.4.1=py37h1ba5d50_0
+  - icu=58.2=h211956c_0
+  - idna=2.7=py37_0
+  - libedit=3.1.20170329=h6b74fdf_2
+  - libffi=3.2.1=h4deb6c0_3
+  - libgcc-ng=8.2.0=hdf63c60_1
+  - libstdcxx-ng=8.2.0=hdf63c60_1
+  - libxml2=2.9.8=h26e45fe_1
+  - libxslt=1.1.32=h1312cb7_0
+  - lxml=4.2.5=py37hefd8a0e_0
+  - ncurses=6.1=he6710b0_1
+  - openssl=1.1.1=h7b6447c_0
+  - pip=18.1=py37_0
+  - pycparser=2.19=py37_0
+  - pyopenssl=18.0.0=py37_0
+  - pysocks=1.6.8=py37_0
+  - python=3.7.1=h0371630_3
+  - readline=7.0=h7b6447c_5
+  - requests=2.20.1=py37_0
+  - setuptools=40.6.2=py37_0
+  - six=1.11.0=py37_1
+  - sqlite=3.25.3=h7b6447c_0
+  - tk=8.6.8=hbc83047_0
+  - urllib3=1.23=py37_0
+  - wheel=0.32.3=py37_0
+  - xz=5.2.4=h14c3975_4
+  - zlib=1.2.11=h7b6447c_3
