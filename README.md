@@ -7,7 +7,7 @@ This is a set of scripts that allows for an automatic collection of _10s of thou
 - `hentai` - hentai images, but also includes pornographic drawings
 - `sexy` - sexually explicit images, but not pornography. Think nude photos, playboy, bikini, beach volleyball, etc.
 - `neutral` - safe for work neutral photos of everyday things and people
-- `drawings` - safe for work drawings
+- `drawings` - safe for work drawings (including anime)
 
 **Note**: the scripts have only been tested in Ubuntu 16.04 Linux distribution
 
