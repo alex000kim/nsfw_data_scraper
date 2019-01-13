@@ -26,6 +26,15 @@ Here is what each script (located under `scripts` directory) does:
    - Ubuntu linux:`sudo apt-get install default-jre`
 - Linux command line tools: `wget`, `convert` (`imagemagick` suite of tools), `rsync`, `shuf`
 
+## For Windows users
+- option 1
+   You can download a linux distro from windows 10 store and run the scripts there.
+   
+- option 2
+   - Download and install git from [here](https://git-scm.com/download/win). Git also installs Bash on your pc.
+   - Download and install wget from [here](http://gnuwin32.sourceforge.net/packages/wget.htm) and add it to PATH.
+   - You can now run the scripts.
+
 ## How to run
 Change working directory to `scripts` and execute each script in the sequence indicated by the number in the file name, e.g.:
 ```bash
