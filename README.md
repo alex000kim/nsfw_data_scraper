@@ -39,7 +39,7 @@ Number of URLs in ../raw_data/neutral/urls_neutral.txt:
    20960
 Number of URLs in ../raw_data/sexy/urls_sexy.txt:
    19554
-Number of urls in ../raw_data/porn/urls_porn.txt:
+Number of URLs in ../raw_data/porn/urls_porn.txt:
   116521
 $ bash 2_download_from_urls.sh
 $ bash 3_optional_download_drawings.sh # optional
