@@ -19,5 +19,5 @@ do
 	mkdir -p "$images_dir"
 	echo "Class: $cname. Total # of urls: $(cat $urls_file | wc -l)"
 	echo "Downloading images..."
-	wget -nc -q -i "$urls_file" -P "$images_dir"
+	wget -nc -q -i "$urls_file" -P "$images_dir" -t3
 done
