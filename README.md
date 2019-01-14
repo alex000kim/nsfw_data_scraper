@@ -59,3 +59,5 @@ I was able to train a CNN classifier to 91% accuracy with the following confusio
 As expected,  `anime` and `hentai` are confused with each other more frequently than with other classes.
 
 Same with `porn` and `sexy` categories.
+
+Note: `anime` category was later renamed to `drawings`
