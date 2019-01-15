@@ -9,8 +9,6 @@ This is a set of scripts that allows for an automatic collection of _10s of thou
 - `neutral` - safe for work neutral images of everyday things and people
 - `drawings` - safe for work drawings (including anime)
 
-**Note**: the scripts have only been tested in Ubuntu 16.04 Linux distribution
-
 Here is what each script (located under `scripts` directory) does:
 - `1_get_urls.sh` - iterates through text files under `scripts/source_urls` downloading URLs of images for each of the 5 categories above. The [Ripme](https://github.com/RipMeApp/ripme) application performs all the heavy lifting. The source URLs are mostly links to various subreddits, but could be any website that Ripme supports.
 *Note*: I already ran this script for you, and its outputs are located in `raw_data` directory. No need to rerun unless you edit files under `scripts/source_urls`
@@ -23,17 +21,16 @@ Here is what each script (located under `scripts` directory) does:
 ## Prerequisites
 - Python3 environment: `conda env create -f environment.yml`
 - Java runtime environment: 
-   - Ubuntu linux:`sudo apt-get install default-jre`
+   - debian and ubuntu:`sudo apt-get install default-jre`
 - Linux command line tools: `wget`, `convert` (`imagemagick` suite of tools), `rsync`, `shuf`
 
 ## For Windows users
-- option 1
-   You can download a linux distro from windows 10 store and run the scripts there.
+- option 1: download a linux distro from windows 10 store and run the scripts there
    
 - option 2
-   - Download and install git from [here](https://git-scm.com/download/win). Git also installs Bash on your pc.
-   - Download and install wget from [here](http://gnuwin32.sourceforge.net/packages/wget.htm) and add it to PATH.
-   - You can now run the scripts.
+   - download and install git from [here](https://git-scm.com/download/win). Git also installs Bash on your pc
+   - download and install wget from [here](http://gnuwin32.sourceforge.net/packages/wget.htm) and add it to PATH
+   - run the scripts
 
 ## How to run
 Change working directory to `scripts` and execute each script in the sequence indicated by the number in the file name, e.g.:
