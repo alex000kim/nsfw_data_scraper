@@ -12,7 +12,7 @@ This is a set of scripts that allows for an automatic collection of _10s of thou
 Here is what each script (located under `scripts` directory) does:
 - `1_get_urls.sh` - iterates through text files under `scripts/source_urls` downloading URLs of images for each of the 5 categories above. The [Ripme](https://github.com/RipMeApp/ripme) application performs all the heavy lifting. The source URLs are mostly links to various subreddits, but could be any website that Ripme supports.
 *Note*: I already ran this script for you, and its outputs are located in `raw_data` directory. No need to rerun unless you edit files under `scripts/source_urls`
-- `2_download_from_urls.sh` - downloads actual images for urls found in text files in `raw_data` directory
+- `2_download_from_urls.sh` - downloads actual images for urls found in text files in `raw_data` directory.  This can lock up, so to make sure new files are still getting pulled down you can run `find raw_data/ -type f | wc -l` and make sure the files in your `raw_data` folder are continually increasing.
 - `3_optional_download_drawings.sh` - (optional) script that downloads SFW anime images from the [Danbooru2018](https://www.gwern.net/Danbooru2018) database
 - `4_optional_download_neutral.sh` - (optional) script that downloads SFW neutral images from the [Caltech256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/) dataset
 - `5_create_train.sh` - creates `data/train` directory and copy all `*.jpg` and `*.jpeg` file into it from `raw_data`. Also removes corrupted images
