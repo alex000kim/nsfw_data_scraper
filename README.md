@@ -24,14 +24,14 @@ Here is what each script (located under `scripts` directory) does:
    - debian and ubuntu:`sudo apt-get install default-jre`
 - Linux command line tools: `wget`, `convert` (`imagemagick` suite of tools), `rsync`, `shuf`
 
-## On Windows
+### On Windows
 - option 1: download a linux distro from windows 10 store and run the scripts there
    
 - option 2
    - download and install git from [here](https://git-scm.com/download/win). Git also installs Bash on your pc
    - download and install wget from [here](http://gnuwin32.sourceforge.net/packages/wget.htm) and add it to PATH
    - run the scripts
-## On Mac
+### On Mac
 The only difference I encountered is that OS X does not have `shuf` command, but has `gshuf` instead that can be installed with `brew install coreutils`. 
 After installation either create an alias from `gshuf` to `shuf` or rename `shuf` to `gshuf` in `6_create_test.sh`.
 
