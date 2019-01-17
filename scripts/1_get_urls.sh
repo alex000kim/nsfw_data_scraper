@@ -26,39 +26,6 @@ do
 	done < "$scripts_dir/source_urls/$cname.txt"
 done
 
-
-declare -a ph_porn_keywords=(
-	"blowjob"
-	"sex"
-	"gangbang"
-	"fingering"
-	"asian"
-	"bukkake"
-	"teen"
-	"cumshot"
-	"milf"
-	"pussy"
-	"creampie"
-	)
-
-for keyword in "${ph_porn_keywords[@]}"
-do
-    urls_file="$raw_data_dir/porn/urls.txt"
-    python download_nsfw_urls.py -k "$keyword" -o "$urls_file"
-done
-
-declare -a ph_hentai_keywords=(
-	"hentai"
-	"manga"
-	"cartoon"
-	)
-
-for keyword in "${ph_hentai_keywords[@]}"
-do
-    urls_file="$raw_data_dir/hentai/urls.txt"
-    python download_nsfw_urls.py -k "$keyword" -o "$urls_file"
-done
-
 for cname in "${class_names[@]}"
 do
 	urls_file="$raw_data_dir/$cname/urls_$cname.txt"
