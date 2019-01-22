@@ -32,6 +32,10 @@ Here is what each script (located under `scripts` directory) does:
    - download and install wget from [here](http://gnuwin32.sourceforge.net/packages/wget.htm) and add it to PATH
    - run the scripts
 
+- if use the multi-thread download
+   - python 3.x
+   - pywget pkg # pip install wget
+
 ### On Mac
 The only difference I encountered is that OS X does not have `shuf` command, but has `gshuf` instead that can be installed with `brew install coreutils`.
 After installation either create an alias from `gshuf` to `shuf` or rename `shuf` to `gshuf` in `6_create_test.sh`.
@@ -62,6 +66,14 @@ drawings hentai neutral porn sexy
 $ ls test
 drawings hentai neutral porn sexy
 ```
+
+## Why need the Multi-thread download
+2_download_from_urls.sh only use the single-thread to download raw data,it's too slow.
+
+## How to use Multi-thread download
+run 2_optional_multi_thread_download.py instead of 2_download_from_urls.sh
+
+
 
 I was able to train a CNN classifier to 91% accuracy with the following confusion matrix:
 ![alt text](confusion_matrix.png)
