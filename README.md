@@ -71,3 +71,8 @@ As expected,  `anime` and `hentai` are confused with each other more frequently 
 Same with `porn` and `sexy` categories.
 
 Note: `anime` category was later renamed to `drawings`
+
+## Download Trained Models
+This repo is provides you with the data. To train or download a trained model you can access both here:
+
+#### https://github.com/GantMan/nsfw_model
