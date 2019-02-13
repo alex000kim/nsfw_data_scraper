@@ -76,3 +76,8 @@ Note: `anime` category was later renamed to `drawings`
 This repo is provides you with the data. To train or download a trained model you can access both here:
 
 #### https://github.com/GantMan/nsfw_model
+
+## More NSFW data
+You can use lists of URLs from repository below to obtain big enough dataset to train robust NSFM classification model.
+
+#### https://github.com/EBazarov/nsfw_data_source_urls
