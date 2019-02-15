@@ -19,5 +19,5 @@ do
 	mkdir -p "$images_dir"
 	echo "Class: $cname. Total # of urls: $(cat $urls_file | wc -l)"
 	echo "Downloading images..."
-	wget -nc -q --timeout=5 --tries=2 -i "$urls_file" -P "$images_dir"
+	xargs -n 20 -P 8 wget -nc -q --timeout=5 --tries=2 -P "$images_dir" < "$urls_file"
 done
