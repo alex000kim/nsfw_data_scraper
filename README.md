@@ -1,4 +1,4 @@
-# NSFW Data Scrapper
+# NSFW Data Scraper
 
 ## Description
 
