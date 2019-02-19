@@ -73,6 +73,6 @@ Same with `porn` and `sexy` categories.
 Note: `anime` category was later renamed to `drawings`
 
 ## Download Trained Models
-This repo is provides you with the data. To train or download a trained model you can access both here:
+This repo provides you with the data. To train or download a trained model you can access both here:
 
 #### https://github.com/GantMan/nsfw_model
