@@ -1,5 +1,7 @@
 # NSFW Data Scraper
 
+## Disclaimer: the data is noisy - do not use to train a production model unless you want negative media coverage!
+
 ## Description
 
 This is a set of scripts that allows for an automatic collection of _tens of thousands_ of images for the following (loosely defined) categories to be later used for training an image classifier:
