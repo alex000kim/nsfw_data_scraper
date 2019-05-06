@@ -36,7 +36,7 @@ find "$train_dir" -type f -name '*.jpg' -print0 |
 while IFS= read -r -d '' jpg_f
 do
     is_corrupted="$(convert "$jpg_f" /dev/null &> /dev/null; echo $?)"
-	if [[ "$is_corrupted" -eq  "1" ]]
+	if [[ "$is_corrupted" -eq  "1" ]] || [ `identify "$jpg_f" | wc -l` -gt 1 ]
 	then
 		echo "removing: $jpg_f"
 		rm "$jpg_f"
