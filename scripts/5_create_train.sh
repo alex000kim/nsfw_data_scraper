@@ -43,6 +43,10 @@ do
 	fi
 done
 
+echo "Removing very large (>10M) and very small (<6K) images"
+find "$train_dir" -type 'f' -size +10M -delete
+find "$train_dir" -type 'f' -size -6k -delete
+
 echo "Number of files per class:"
 for subdir in $(ls "$train_dir")
 do 
