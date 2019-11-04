@@ -1,3 +1,5 @@
+.ipynb_checkpoints/
+.config/
 raw_data
 data
 scripts/rip.properties
