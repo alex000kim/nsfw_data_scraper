@@ -1,6 +1,6 @@
 # NSFW Data Scraper
 
-## Disclaimer: the data is noisy - do not use to train a production model
+## Disclaimer: use with caution - the dataset is noisy
 
 ## Description
 
