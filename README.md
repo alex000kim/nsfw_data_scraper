@@ -1,6 +1,6 @@
 # NSFW Data Scraper
 
-## Disclaimer: use with caution - the dataset is noisy
+## Note: use with caution - the dataset is noisy
 
 ## Description
 
