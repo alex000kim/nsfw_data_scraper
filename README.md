@@ -40,7 +40,7 @@ Step 3/3 : ENTRYPOINT ["/bin/bash"]
 Successfully built d32c5ae5235b
 Successfully tagged docker_nsfw_data_scraper:latest
 $ # Next command might run for several hours. It is recommended to leave it overnight
-$ docker run -v $(pwd):/root docker_nsfw_data_scraper /root/scripts/runall.sh
+$ docker run -v $(pwd):/root/nsfw_data_scraper docker_nsfw_data_scraper scripts/runall.sh
 Getting images for class: neutral
 ...
 ...
