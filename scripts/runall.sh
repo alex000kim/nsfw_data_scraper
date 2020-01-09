@@ -1,4 +1,4 @@
-for f in $(ls /root/scripts/*_*_.sh)
+for f in $(ls /root/nsfw_data_scraper/scripts/*_*_.sh)
 do 
 	bash $f
 done
