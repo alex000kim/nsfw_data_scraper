@@ -59,6 +59,7 @@ drawings  hentai  neutral  porn  sexy
 ## Results
 
 I was able to train a CNN classifier to 91% accuracy with the following confusion matrix:
+
 ![alt text](confusion_matrix.png)
 
 As expected,  `drawings` and `hentai` are confused with each other more frequently than with other classes.
