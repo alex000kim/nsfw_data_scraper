@@ -15,7 +15,6 @@ declare -a class_names=(
 for cname in "${class_names[@]}"
 do
 	echo "Getting images for class: $cname"
-	urls_file="$raw_data_dir/$cname/urls_$cname.txt"
 	while read url
 	do
 		if [[ ! "$url" =~ ^"#" ]]
