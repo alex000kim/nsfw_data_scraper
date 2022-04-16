@@ -12,7 +12,8 @@ This is a set of scripts that allows for an automatic collection of _tens of tho
 - `drawings` - safe for work drawings (including anime)
 
 Here is what each script (located under `scripts` directory) does:
-- `1_get_urls_.sh` - iterates through text files under `scripts/source_urls` downloading URLs of images for each of the 5 categories above. The [Ripme](https://github.com/RipMeApp/ripme) application performs all the heavy lifting. The source URLs are mostly links to various subreddits, but could be any website that Ripme supports.
+- `0_setup.sh` - performs initial setup (e.g. downloads [`ripme`](https://github.com/RipMeApp/ripme))
+- `1_get_urls_.sh` - iterates through text files under `scripts/source_urls` downloading URLs of images for each of the 5 categories above. The `ripme` application performs all the heavy lifting. The source URLs are mostly links to various subreddits, but could be any website that Ripme supports.
 *Note*: I already ran this script for you, and its outputs are located in `raw_data` directory. No need to rerun unless you edit files under `scripts/source_urls`.
 - `2_download_from_urls_.sh` - downloads actual images for urls found in text files in `raw_data` directory.
 - `3_optional_download_drawings_.sh` - (optional) script that downloads SFW anime images from the [Danbooru2018](https://www.gwern.net/Danbooru2018) database.
