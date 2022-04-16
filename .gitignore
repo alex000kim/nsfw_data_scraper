@@ -5,3 +5,4 @@ data
 scripts/rip.properties
 .DS_Store
 scripts/ripme.jar
+scripts/history.json
