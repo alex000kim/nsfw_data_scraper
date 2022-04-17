@@ -1,10 +1,11 @@
 #!/bin/bash
 
+
+N=1000 # determines number of test images in each class 
+
 scripts_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 base_dir="$(dirname "$scripts_dir")"
 data_dir="$base_dir/data"
-
-N=2000
 
 declare -a class_names=(
 	"neutral"
