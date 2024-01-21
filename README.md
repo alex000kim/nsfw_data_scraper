@@ -16,7 +16,7 @@ Here is what each script (located under `scripts` directory) does:
 *Note*: I already ran this script for you, and its outputs are located in `raw_data` directory. No need to rerun unless you edit files under `scripts/source_urls`.
 - `2_download_from_urls_.sh` - downloads actual images for urls found in text files in `raw_data` directory.
 - `3_optional_download_drawings_.sh` - (optional) script that downloads SFW anime images from the [Danbooru2018](https://www.gwern.net/Danbooru2018) database.
-- `4_optional_download_neutral_.sh` - (optional) script that downloads SFW neutral images from the [Caltech256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/) dataset
+- `4_optional_download_neutral_.sh` - (optional) script that downloads SFW neutral images from the [Caltech256](https://data.caltech.edu/records/nyy15-4j048) dataset
 - `5_create_train_.sh` - creates `data/train` directory and copy all `*.jpg` and `*.jpeg` files into it from `raw_data`. Also removes corrupted images.
 - `6_create_test_.sh` - creates `data/test` directory and moves `N=2000` random files for each class from `data/train` to `data/test` (change this number inside the script if you need a different train/test split). Alternatively, you can run it multiple times, each time it will move `N` images for each class from `data/train` to `data/test`.
 
